@@ -11,6 +11,7 @@ import maishiy from "../assets/svg/maishiy.svg";
 import oyoqkiyim from "../assets/svg/oyoqkiyim.svg";
 import salomatlik from "../assets/svg/salomatlik.svg";
 import sport from "../assets/svg/sport.svg";
+import Filter from "./Filter";
 
 const SiteBar = () => {
   const navigate = useNavigate();
@@ -19,6 +20,8 @@ const SiteBar = () => {
       <div className="logo" onClick={() => navigate("/")}>
         <img src={logo} alt="" />
       </div>
+      <Filter />
+
       <div className="sitebarLinks">
         <p>Bosh menyu</p>
 

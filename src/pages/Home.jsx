@@ -5,6 +5,8 @@ import basket_icon from "../assets/basket_icon.png";
 import { FaChevronLeft } from "react-icons/fa6";
 import { FaChevronRight } from "react-icons/fa6";
 import { FaChevronDown } from "react-icons/fa";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from "react-responsive-carousel";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa6";
 
 const Home = () => {
@@ -81,6 +83,29 @@ const Home = () => {
   return (
     <>
       <div className="wrapper">
+        <Carousel width={949} showThumbs={false} autoPlay infiniteLoop>
+          <div className="big-carousel">
+            {" "}
+            <p>Aksiya Photo</p>{" "}
+          </div>
+          <div className="big-carousel">
+            {" "}
+            <p>Aksiya Photo</p>{" "}
+          </div>
+          <div className="big-carousel">
+            {" "}
+            <p>Aksiya Photo</p>{" "}
+          </div>
+          <div className="big-carousel">
+            {" "}
+            <p>Aksiya Photo</p>{" "}
+          </div>
+          <div className="big-carousel">
+            {" "}
+            <p>Aksiya Photo</p>{" "}
+          </div>
+        </Carousel>
+
         <div className="first-page">
           <div className="reklama">
             <div className="reklama-box">

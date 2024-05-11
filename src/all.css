@@ -262,13 +262,10 @@ nav {
 
 .sitebar {
   width: 348px;
-  /* height: 100vh; */
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
-  justify-content: center;
-  height: 830px;
   padding-left: 37px;
+  background-color: #fff;
 }
 .logo {
   display: flex;
@@ -328,6 +325,20 @@ nav {
   background: rgb(248, 248, 248);
   border-radius: 5px 5px 5px 5px;
   cursor: pointer;
+}
+.big-carousel {
+  /* width: 949px; */
+  height: 473px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.big-carousel > p {
+  color: black;
+  font-size: 40px;
+  font-weight: 300;
 }
 
 .katalog h3 {
@@ -600,6 +611,7 @@ select {
   flex-direction: column;
   align-items: center;
   padding: 86px;
+  background-color: #fff;
 }
 .basketPart {
   width: 290px;
@@ -1321,7 +1333,6 @@ footer {
   background-color: #d9d9d9;
 }
 
-
 .contact {
   display: flex;
   flex-direction: column;
@@ -1347,24 +1358,23 @@ footer {
 .footerLinks > a {
   color: #000;
 }
-.social{
+.social {
   display: flex;
   flex-direction: column;
   margin-left: 59px;
   gap: 20px;
 }
-.social > a{
+.social > a {
   color: #000;
   font-weight: 700;
   font-size: 16px;
-
 }
-.icons{
+.icons {
   display: flex;
   align-items: center;
   gap: 16px;
 }
-.icons >  button{
+.icons > button {
   width: 24px;
   height: 24px;
   background-color: #fff;
@@ -1373,8 +1383,87 @@ footer {
   justify-content: center;
   border-radius: 50%;
 }
-.downloadLinks{
+.downloadLinks {
   display: flex;
   align-items: center;
   gap: 27.51px;
+}
+
+.filter-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 52px;
+}
+
+.filter {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+.filter-price {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.filter-form > b {
+  font-size: 22.65px;
+  font-weight: 400;
+  margin-bottom: 14px;
+}
+.filter-price > p {
+  display: flex;
+  align-items: center;
+  gap: 115px;
+  font-size: 18px;
+  font-weight: 400;
+}
+.price-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.price-card {
+  width: 134px;
+  height: 49px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  box-sizing: border-box;
+  border: 1px solid rgba(93, 102, 97, 0.5);
+  border-radius: 11px;
+
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+  background: rgb(253, 253, 253);
+}
+.checkbox-filter{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 12px;
+}
+.checkbox-filter  > div{
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.checkbox-filter > div > input{
+  width: 20px;
+  height: 20px;
+}
+.checkbox-filter > div > p{
+ font-size: 20px;
+ font-weight: 400;
+ color: #A4ACAD;
+}
+.filter-form > button{
+  width: 90px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-color: #FD9803;
+  margin-top: 12px;
+  border-radius: 3px;
 }
