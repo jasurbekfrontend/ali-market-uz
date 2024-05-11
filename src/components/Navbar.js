@@ -51,7 +51,7 @@ const Navbar = () => {
         </div>
         <div className="user">
           <BsCart3 />
-          <button>Savat</button>
+          <button onClick={() => navigate("/cart")}>Savat</button>
         </div>
       </div>
       {catalogToggle === true ? <Catalog /> : ""}

@@ -1467,3 +1467,63 @@ footer {
   margin-top: 12px;
   border-radius: 3px;
 }
+
+
+
+/* Savat Mapp */
+
+.Cart{
+  padding-left: 30px;
+}
+
+.Card-img{
+  display: flex;
+  gap: 15px;
+
+}
+
+.card-map{
+  padding-top: 30px;
+  align-items: center;
+  justify-content: space-between;
+  width: 1106px;
+  display: flex;
+}
+
+.card-info{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.Card-calculate{
+  width: 300px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: space-between;
+}
+
+.delete-btn{
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+
+.counter{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5px;
+  border: 1px solid gray;
+  width: 150px;
+  height: 30px;
+  border-radius: 5px;
+  font-size: 20px;
+
+}
+
+.Card-calculate > p{
+  text-decoration: line-through;
+}
