@@ -26,7 +26,6 @@ function App() {
           <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/category" element={<Catalog />} />
             <Route path="/account" element={<PersonalCabinet />} />
             <Route path="/electronics" element={<Electroniks />} />
             <Route path="/product" element={<ProductBoxMax />} />

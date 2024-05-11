@@ -39,7 +39,7 @@ const Home = () => {
         newOffset = 0;
       }
       setOffset(newOffset);
-    }, 1000000000);
+    }, 100);
 
     return () => clearInterval(interval);
   }, [offset]);
