@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { IoIosStar } from "react-icons/io";
 import { IoIosSearch } from "react-icons/io";
 import { AiOutlineUser } from "react-icons/ai";
 import { BsCart3 } from "react-icons/bs";
 import { useNavigate } from "react-router";
 import Catalog from "./Catalog";
+import logo from "../assets/logo.png";
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -13,11 +14,26 @@ const Navbar = () => {
   function toggle() {
     setCatalogToggle(!catalogToggle);
   }
+  const [isWideScreen, setIsWideScreen] = useState(window.innerWidth >= 1210);
 
+  useEffect(() => {
+    const handleResize = () => {
+      setIsWideScreen(window.innerWidth >= 1210);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+  console.log(isWideScreen);
   return (
     <nav>
       <div className="header">
         <div className="katalog">
+          {isWideScreen === true ? (
+            <img onClick={() => navigate("/")} src={logo} alt="" />
+          ) : (
+            ""
+          )}
+
           <svg
             onClick={() => toggle()}
             width="30"
@@ -31,7 +47,11 @@ const Navbar = () => {
               fill="black"
             />
           </svg>
-          <h3 onClick={() => toggle()}>Katalog</h3>
+          {isWideScreen === true ? (
+            <h3 onClick={() => toggle()}>Katalog</h3>
+          ) : (
+            ""
+          )}
           <button>
             <IoIosStar className="star" />
           </button>
@@ -47,11 +67,20 @@ const Navbar = () => {
         </div>
         <div className="user">
           <AiOutlineUser />
-          <button onClick={() => navigate("/account")}>Kirish</button>
+          {isWideScreen === true ? (
+            <button onClick={() => navigate("/account")}>Kirish</button>
+          ) : (
+            ""
+          )}
         </div>
         <div className="user">
           <BsCart3 />
-          <button onClick={() => navigate("/cart")}>Savat</button>
+
+          {isWideScreen === true ? (
+            <button onClick={() => navigate("/cart")}>Savat</button>
+          ) : (
+            ""
+          )}
         </div>
       </div>
       {catalogToggle === true ? <Catalog /> : ""}

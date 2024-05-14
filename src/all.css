@@ -14,6 +14,8 @@
 body {
   display: flex;
   justify-content: center;
+  background-color: blue;
+  align-items: center;
 }
 
 /* Buttons and Links */
@@ -30,13 +32,17 @@ input {
   outline: none;
 }
 
-/* Color for Liked Elements */
-.liked {
-  color: rgb(253, 152, 3);
+.mainHome {
+  max-width: 1920px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 nav {
-  width: 1170px;
+  width: 1205px;
   height: 100px;
   background: #f2f2f2;
   padding: 23px 32px;
@@ -313,10 +319,13 @@ nav {
   display: flex;
   border-radius: 5px;
   border: 2px solid #a4acad;
+  display: flex;
+  align-items: center;
+  justify-content: start;
 }
 
 .katalog {
-  width: 258px;
+  width: 418px;
   height: 100%;
   display: flex;
   align-items: center;
@@ -326,8 +335,11 @@ nav {
   border-radius: 5px 5px 5px 5px;
   cursor: pointer;
 }
+.katalog > img {
+  width: 130px;
+  height: 200%;
+}
 .big-carousel {
-  /* width: 949px; */
   height: 473px;
   background-color: white;
   display: flex;
@@ -367,7 +379,7 @@ nav {
 
 .form-search {
   position: relative;
-  width: 521px;
+  width: 421px;
   height: 100%;
   background: white;
   display: flex;
@@ -375,7 +387,7 @@ nav {
   padding-right: 36px;
 }
 
-.form-search input {
+.form-search > input {
   width: 100%;
   height: 90%;
   margin-right: 30px;
@@ -383,12 +395,13 @@ nav {
   border: 1px solid #b4b4b4;
   border-radius: 5px;
   font-size: 18px;
+  background-color: red;
   padding-left: 10px;
 }
 
 .form-search .search {
   position: absolute;
-  left: 330px;
+  left: 220px;
   font-size: 35px;
   color: #b4b4b4;
   cursor: pointer;
@@ -431,14 +444,6 @@ select {
   text-transform: capitalize;
 }
 /* Wrapper Div */
-.wrapper {
-  width: 1170px;
-  display: flex;
-  flex-direction: column;
-  background-color: rgb(242, 242, 242);
-  display: flex;
-  align-items: center;
-}
 
 /* Links Div */
 .links {
@@ -458,6 +463,27 @@ select {
   background-color: transparent;
 }
 
+.slider {
+  width: 949px;
+  height: 473px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 31px;
+  margin-bottom: 57px;
+  background-color: #fff;
+}
+
+.card-container {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  background-color: red;
+  justify-content: center;
+  margin-bottom: 57px;
+}
 /* Card Div */
 .card {
   width: 297px;
@@ -520,33 +546,8 @@ select {
   justify-content: center;
 }
 
-/* Main Carousel */
-.main-carousel {
-  width: 1170px;
-  display: flex;
-  align-items: center;
-  padding: 0 12px;
-}
-.carousel-wrapper {
-  width: 100%;
-  display: flex;
-  overflow: hidden;
-}
-.carousel {
-  width: 3510px;
-  display: flex;
-  gap: 110px;
-  transition: 0.8s ease;
-}
-
 /* Slider Div */
-.slider {
-  display: flex;
-  gap: 31px;
-  width: 1146px;
-  align-items: center;
-  padding-left: 40px;
-}
+
 .main-carousel > button {
   width: 60px;
   height: 60px;
@@ -684,6 +685,7 @@ select {
 .cabinet {
   width: 1106px;
   height: 731px;
+  margin-left: 32px;
   box-sizing: border-box;
   border: 1px solid rgba(0, 0, 0, 0.39);
   border-radius: 5px;
@@ -692,10 +694,12 @@ select {
   flex-direction: column;
   padding: 34px 24px;
   margin-top: 28px;
+  margin-bottom: 1100px;
 }
 .cabinetText {
   color: rgb(0, 0, 0);
   font-size: 36.65px;
+  padding-left: 32px;
   font-weight: 500;
 }
 .topCabinet {
@@ -1326,7 +1330,7 @@ select {
 
 footer {
   display: flex;
-  width: 1170px;
+  width: 1205px;
   height: 302px;
   padding: 0 72px;
   padding-top: 47px;
@@ -1436,53 +1440,51 @@ footer {
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
   background: rgb(253, 253, 253);
 }
-.checkbox-filter{
+.checkbox-filter {
   display: flex;
   flex-direction: column;
   gap: 24px;
   margin-bottom: 12px;
 }
-.checkbox-filter  > div{
+.checkbox-filter > div {
   display: flex;
   align-items: center;
   gap: 18px;
 }
-.checkbox-filter > div > input{
+.checkbox-filter > div > input {
   width: 20px;
   height: 20px;
 }
-.checkbox-filter > div > p{
- font-size: 20px;
- font-weight: 400;
- color: #A4ACAD;
+.checkbox-filter > div > p {
+  font-size: 20px;
+  font-weight: 400;
+  color: #a4acad;
 }
-.filter-form > button{
+.filter-form > button {
   width: 90px;
   height: 35px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #fff;
-  background-color: #FD9803;
+  background-color: #fd9803;
   margin-top: 12px;
   border-radius: 3px;
 }
 
-
-
 /* Savat Mapp */
 
-.Cart{
+.Cart {
   padding-left: 30px;
+  height: 100vh;
 }
 
-.Card-img{
+.Card-img {
   display: flex;
   gap: 15px;
-
 }
 
-.card-map{
+.card-map {
   padding-top: 30px;
   align-items: center;
   justify-content: space-between;
@@ -1490,13 +1492,13 @@ footer {
   display: flex;
 }
 
-.card-info{
+.card-info {
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
 
-.Card-calculate{
+.Card-calculate {
   width: 300px;
   height: 200px;
   display: flex;
@@ -1505,13 +1507,13 @@ footer {
   justify-content: space-between;
 }
 
-.delete-btn{
+.delete-btn {
   display: flex;
   align-items: center;
   font-size: 20px;
 }
 
-.counter{
+.counter {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1521,9 +1523,62 @@ footer {
   height: 30px;
   border-radius: 5px;
   font-size: 20px;
-
 }
 
-.Card-calculate > p{
+.Card-calculate > p {
   text-decoration: line-through;
+}
+.home-wrapper {
+  max-width: 1205px;
+  width: 100%;
+  padding: 0 109px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 1209px) {
+  .katalog {
+    width: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 0px 14px 26px;
+    background: rgb(248, 248, 248);
+    border-radius: 5px 5px 5px 5px;
+    cursor: pointer;
+    background-color: blue;
+    gap: 12px;
+  }
+  .header {
+    width: 100%;
+    height: 55px;
+    display: flex;
+    border-radius: 5px;
+    border: 2px solid #a4acad;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .user {
+    width: 91px;
+    height: 100%;
+    border: 1px solid rgb(203, 207, 207);
+    background: rgb(248, 248, 248);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    font-size: 25px;
+    background-color: red;
+    padding: 11px 24px;
+    cursor: pointer;
+  }
+  nav {
+    width: 100vw;
+    height: 100px;
+    background: #f2f2f2;
+    padding: 23px 32px;
+  }
 }
