@@ -1,13 +1,10 @@
-import { useState } from "react";
 import Home from "./pages/Home";
 import Footer from "./components/Footer";
 import Basket from "./components/Basket";
 import PersonalCabinet from "./components/PersonalCabinet";
-import ProductBoxMin from "./components/ProductBoxMin";
-import Catalog from "./components/Catalog";
 import Navbar from "./components/Navbar";
 import SiteBar from "./components/SiteBar";
-import { Route, Routes, useLocation } from "react-router-dom";
+import { Route, Routes} from "react-router-dom";
 import ProductBoxMax from "./components/ProductBoxMax";
 import Electroniks from "./components/Electroniks";
 import Cart from "./components/Cart";

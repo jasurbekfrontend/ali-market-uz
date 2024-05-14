@@ -82,6 +82,11 @@ const Cart = () => {
     setCartItems(updatedItems);
   };
 
+  const handleDelete = (id) => {
+    const updatedItems = cartItems.filter((item) => item.id !== id);
+    setCartItems(updatedItems);
+  };
+
   return (
     <>
       <div className="Cart">
@@ -113,7 +118,7 @@ const Cart = () => {
                 </div>
               </div>
               <div className="Card-calculate">
-                <button className="delete-btn">
+                <button className="delete-btn" onClick={() => handleDelete(item.id)}>
                   <img src={deleteimg} alt="" />
                   O'chirish
                 </button>
