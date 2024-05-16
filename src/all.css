@@ -14,7 +14,6 @@
 body {
   display: flex;
   justify-content: center;
-  background-color: blue;
   align-items: center;
 }
 
@@ -395,7 +394,6 @@ nav {
   border: 1px solid #b4b4b4;
   border-radius: 5px;
   font-size: 18px;
-  background-color: red;
   padding-left: 10px;
 }
 
@@ -480,7 +478,6 @@ select {
   align-items: center;
   flex-wrap: wrap;
   gap: 30px;
-  background-color: red;
   justify-content: center;
   margin-bottom: 57px;
 }
@@ -1548,7 +1545,6 @@ footer {
     background: rgb(248, 248, 248);
     border-radius: 5px 5px 5px 5px;
     cursor: pointer;
-    background-color: blue;
     gap: 12px;
   }
   .header {
@@ -1571,7 +1567,6 @@ footer {
     justify-content: center;
     gap: 14px;
     font-size: 25px;
-    background-color: red;
     padding: 11px 24px;
     cursor: pointer;
   }
