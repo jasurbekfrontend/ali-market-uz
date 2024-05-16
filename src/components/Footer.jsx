@@ -53,8 +53,8 @@ const Footer = () => {
           </button>
         </div>
         <div className="downloadLinks">
-<img src={playmarket} alt="" />
-<img src={appstore} alt="" />
+          <img src={playmarket} alt="" />
+          <img src={appstore} alt="" />
         </div>
       </div>
     </footer>
