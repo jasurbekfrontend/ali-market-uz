@@ -1654,3 +1654,120 @@ footer{
   margin: 0;
 }
 }
+
+
+/* Пк */
+@media (max-width: 1173px) {
+  .Cart > h1 {
+    font-size: 28px;
+  }
+  .card-map {
+    width: 900px !important;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .card-info > h2 {
+    font-size: 20px;
+  }
+
+  .Card-calculate {
+    width: 290px;
+    height: 195px;
+  }
+}
+
+@media (max-width: 947px) {
+  .Cart > h1 {
+    font-size: 22px;
+  }
+  .card-map {
+    width: 800px !important;
+  }
+
+  .card-info > h2 {
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 854px) {
+  .card-map {
+    width: 700px !important;
+    justify-content: center;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 743px) {
+  .card-map {
+    width: 700px !important;
+    justify-content: center;
+    gap: 10px;
+  }
+  .Cart > h1 {
+    margin-left: 200px;
+  }
+  .card-select {
+    margin-left: 200px;
+  }
+}
+
+/* Планшет */
+@media (max-width: 742px) {
+  .card-map {
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .Card-calculate {
+    width: 380px;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    /* margin-left: -225px; */
+  }
+}
+
+/* Телефон учун */
+@media (max-width: 500px) {
+  .Cart {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+  .Cart > h1 {
+    font-size: 40px;
+    margin-top: 100px;
+  }
+  .card-map {
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    padding-left: 160px;
+  }
+
+  .card-info > h2 {
+    font-size: 22px;
+  }
+
+  .Card-calculate {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    /* margin-left: -225px; */
+  }
+  .Cart > h1 {
+    margin-left: -180px;
+  }
+  .card-select {
+    margin-left: -210px;
+  }
+  .Card-img {
+    width: 370px;
+  }
+}
