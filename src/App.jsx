@@ -12,8 +12,21 @@ import Card from "./components/Card";
 import Login from "./components/Login/Login";
 import Loginsms from "./components/Login/Login-sms";
 import Loginregister from "./components/Login/Login-register";
+import Navigator from "./components/ Navigator";
+import { useEffect, useState } from "react";
 
 function App() {
+  const [isWideScreen, setIsWideScreen] = useState(window.innerWidth >= 768);
+  useEffect(() => {
+    const handleResize = () => {
+      setIsWideScreen(window.innerWidth >= 768);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+  console.log(isWideScreen);
   return (
     <div
       className="mainHome"
@@ -27,11 +40,11 @@ function App() {
         <Route path="/product" element={<ProductBoxMax />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/login" element={<Login />} />
         <Route path="/verify" element={<Loginsms />} />
         <Route path="/register" element={<Loginregister />} />
       </Routes>
       <Footer />
+      {isWideScreen === false  ? (<Navigator />) : null}
     </div>
   );
 }

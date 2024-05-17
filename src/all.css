@@ -38,6 +38,7 @@ input {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 nav {
@@ -691,7 +692,6 @@ select {
   flex-direction: column;
   padding: 34px 24px;
   margin-top: 28px;
-  margin-bottom: 1100px;
 }
 .cabinetText {
   color: rgb(0, 0, 0);
@@ -1475,7 +1475,6 @@ footer {
   padding: 100px 0;
   padding-left: 30px;
   height: auto;
-  
 }
 
 .Card-img {
@@ -1535,6 +1534,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #9b9393;
 }
 @media (max-width: 1209px) {
   .katalog {
@@ -1603,7 +1603,6 @@ footer {
   .downloadLinks {
     flex-direction: column;
   }
-
 }
 
 @media (max-width: 768px) {
@@ -1630,38 +1629,37 @@ footer {
     color: #b4b4b4;
     cursor: pointer;
   }
-  footer{
+  footer {
     width: 100vw;
     padding: 0;
   }
 }
 @media (max-width: 949px) {
-  .footerlogo{
+  .footerlogo {
     display: none;
   }
-  footer{
+  footer {
     justify-content: center;
   }
 }
 @media (max-width: 600px) {
-footer{
-  flex-direction: column;
-  gap: 24px;
-  padding: 0;
-  width: 100vw;
-}
+  footer {
+    flex-direction: column;
+    gap: 24px;
+    padding: 0;
+    width: 100vw;
+  }
 
-.footerLinks{
-  width: 100vw;
-  align-items: center;
+  .footerLinks {
+    width: 100vw;
+    align-items: center;
+  }
+  .social {
+    width: 100vw;
+    align-items: center;
+    margin: 0;
+  }
 }
-.social{
-  width: 100vw;
-  align-items: center;
-  margin: 0;
-}
-}
-
 
 /* Пк */
 @media (max-width: 1173px) {
@@ -1782,19 +1780,50 @@ footer{
     /* flex-direction: column; */
     align-items: center;
   }
-  .Card-img > img{
+  .Card-img > img {
     width: 106px;
     height: 139px;
   }
 }
 @media (max-width: 400px) {
-  .Card-img{
+  .Card-img {
     flex-direction: column;
     width: 250px;
   }
-  .Card-calculate{
+  .Card-calculate {
     width: 100vw;
     display: flex;
     align-items: center;
   }
+}
+
+@media (max-width: 1209px) {
+  .katalog {
+    width: 118px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 0px 14px 26px;
+    background: rgb(248, 248, 248);
+    border-radius: 5px 5px 5px 5px;
+    cursor: pointer;
+    background-color: blue;
+  }
+}
+
+.navigator {
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+
+  height: 63px;
+  display: flex;
+  align-items: center;
+  padding: 0 42px;
+  justify-content: space-between;
+  background-color: #fff;
+}
+.navigator > a {
+  font-size: 20px;
 }

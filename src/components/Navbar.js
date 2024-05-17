@@ -66,7 +66,7 @@ const Navbar = () => {
           </select>
         </div>
         <div className="user">
-          <AiOutlineUser />
+          <AiOutlineUser onClick={() => navigate("/account")} />
           {isWideScreen === true ? (
             <button onClick={() => navigate("/account")}>Kirish</button>
           ) : (
@@ -74,7 +74,7 @@ const Navbar = () => {
           )}
         </div>
         <div className="user">
-          <BsCart3 />
+          <BsCart3 onClick={() => navigate("/cart")} />
 
           {isWideScreen === true ? (
             <button onClick={() => navigate("/cart")}>Savat</button>
